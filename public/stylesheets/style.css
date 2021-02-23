@@ -7,15 +7,15 @@ body, html {
   padding: 0;
   margin: 0;
   font-family: 'Teko', sans-serif;
-  color: #A7A7A7;
+  color: #231010;
 }
 
-a {
+/* a {
   text-decoration: none;
-  color: #D9EAD3;
+  color: #231010;
   font-weight: bold;
   transition: color .1s;
-}
+} */
 
 a:hover {
   color: #A7A7A7;
@@ -25,7 +25,6 @@ button {
   background-color: #231010;
   border: 0;
   padding: 1%;
-  margin: 25%;
   color: white;
   font-weight: bold;
   transition: background-color .1s;
@@ -34,7 +33,7 @@ button {
 }
 
 button:hover {
-  background-color: #D9EAD3;
+  background-color: #A7A7A7;
 }
 
 .post-list {
@@ -45,12 +44,12 @@ button:hover {
 textarea, input {
   padding: .5%;
   border-radius: 5px;
-  border: 1px solid #A7A7A7;
+  border: 1px solid #D9EAD3;
 }
 
 textarea:focus, input:focus {
   outline: none;
-  border: 1px solid #231010;
+  border: 1px solid #A7A7A7;
 }
 
 textarea {
@@ -69,25 +68,35 @@ form label {
 .wrapper {
   width: 100%;
   min-height: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  background-color: #D9EAD3;
 }
 
 header {
-  border-bottom: 1px solid #D9EAD3;
   background-color: #231010;
-  display: flex;
+  max-height: 80px;
   width: 100%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 3%;
 }
 
 header h1 {
-  font-size: 2em;
+  font-size: 3em;
+}
+
+.home {
   color: #D9EAD3;
+  text-decoration: none;
+}
+
+.title-header {
+  color: #231010;
+  text-decoration: none;
+  font-size: 24px;
 }
 
 main {
@@ -98,16 +107,55 @@ main {
 .btn-no-style {
   background: none;
   border: none;
-  padding: inherit;
+  padding: 0;
   cursor: pointer;
   text-decoration: none;
   color: #D9EAD3;
-  font-size: 100%;
+  font-size: 24px;
   font-weight: bold;
   transition: color .1s;
+  margin-left: 16px;
+  font-family: 'Teko', sans-serif;
 }
 
 .btn-no-style:hover {
+  background: none;
+  color: #A7A7A7;
+}
+
+.login-btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: #D9EAD3;
+  font-size: 24px;
+  font-weight: bold;
+  transition: color .1s;
+  margin-left: 16px;
+}
+
+.login-btn-no-style:hover:hover {
+  background: none;
+  color: #A7A7A7;
+}
+
+.dashboard-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: #D9EAD3;
+  font-size: 24px;
+  font-weight: bold;
+  transition: color .1s;
+  margin-left: 16px;
+  font-family: 'Teko', sans-serif;
+}
+
+.dashboard-btn:hover {
   background: none;
   color: #A7A7A7;
 }
@@ -117,7 +165,7 @@ main {
 }
 
 .delete-post-btn:hover {
-  background-color: #231010;
+  background-color: #A7A7A7;
 }
 
 .post {
@@ -128,21 +176,22 @@ main {
 .post .title span {
   font-style: italic;
   font-size: 90%;
-  color: #A7A7A7;
+  color: #7d7d7d;
 }
 
 .edit-link {
   display: block;
   margin: -1.5% 0 2% 0;
+  color: #7d7d7d;
 }
 
 .upvote-btn {
-  background-color: #D9EAD3;
+  background-color: #231010;
   transition: background-color .1s;
 }
 
 .upvote-btn:hover {
-  background-color: #D9EAD3;
+  background-color: #A7A7A7;
 }
 
 .comment-form {
@@ -154,8 +203,12 @@ main {
   margin-bottom: 1%;
 }
 
+.comments {
+  color: #7d7d7d;
+}
+
 .comment:nth-child(odd) {
-  background-color: #231010;
+  background-color: #fff5eb;
 }
 
 .comment .meta {
@@ -177,5 +230,5 @@ footer {
   display: flex;
   justify-content: center;
   padding: 1%;
-  font-size: 110%;
+  font-size: 24px;
 }
